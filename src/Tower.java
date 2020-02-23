@@ -24,5 +24,9 @@ public class Tower {
         for (int i = 0; i < observers.size(); i++) {
             observers.get(i).updateConditions();
         }
+        if (observers.isEmpty()) {//when every aircraft has landed
+            Simulator.writer.close();
+            System.exit(0);
+        }    
     }
 }

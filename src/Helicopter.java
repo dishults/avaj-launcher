@@ -19,7 +19,6 @@ public class Helicopter extends Aircraft implements Flyable {
         String helicopter = "Helicopter#"+name+"("+id+")";
 
         Log.message(helicopter + ": ", weather);
-
         if (weather == "SUN")
             coordinates = new Coordinates(longitude + 10, latitude, height + 2);
         else if (weather == "RAIN")
@@ -28,13 +27,8 @@ public class Helicopter extends Aircraft implements Flyable {
             coordinates = new Coordinates(longitude + 1, latitude, height);
         else if (weather == "SNOW")
             coordinates = new Coordinates(longitude, latitude, height - 12);
-
         if (coordinates.getHeight() == 0)
-            unregisterTower(helicopter);
-        
-        System.out.println("Longitude " + coordinates.getLongitude() +
-                        " Latitude " + coordinates.getLatitude() +
-                        " Height " + coordinates.getHeight()); //tmp
+            unregisterTower(helicopter, coordinates);
     }
 
     public void registerTower(WeatherTower weatherTower) {
@@ -43,8 +37,8 @@ public class Helicopter extends Aircraft implements Flyable {
         Log.message("Helicopter#"+name+"("+id+")", "registered");
     }
 
-    public void unregisterTower(String helicopter) {
+    public void unregisterTower(String helicopter, Coordinates coordinates) {
         this.weatherTower.unregister(this);
-        Log.message(helicopter, "unregistered");
+        Log.landing(helicopter, coordinates);
     }
 }

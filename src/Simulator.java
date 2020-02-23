@@ -7,35 +7,42 @@ import java.io.*;
  */
 public class Simulator {
 
+    public static PrintWriter writer;
+    private static String line;
+    private static String splitted[];
+    //Aircraft
+    static String type;
+    static String name;
+    static int longitude;
+    static int latitude;
+    static int height;
+    static Flyable aircraft;
     public static void main(String[] args) throws IOException {
-        /*if (args.length < 1)
-            return;
-        File readFile = new File(args[0]);
-  
+        //if (args.length < 1)
+        //    return;
+        //File readFile = new File(args[0]);
+        File readFile = new File("scenario.txt"); //tmp for debuging
         BufferedReader reader = new BufferedReader(new FileReader(readFile)); 
-        PrintWriter writer = new PrintWriter("simulation.txt");
-
-        String str; 
-        while ((str = reader.readLine()) != null) 
-            writer.write(str + '\n');
-        reader.close();
-        writer.close();*/
-        //AircraftFactory aircraftFactory = new AircraftFactory();
-        int simulations = 3;
+        writer = new PrintWriter("simulation.txt");
+        int simulations = Integer.parseInt(reader.readLine());
         WeatherTower weatherTower = new WeatherTower();
-        AircraftFactory.newAircraft("Baloon", "B1", 2, 3, 20
-                ).registerTower(weatherTower);
-        AircraftFactory.newAircraft("JetPlane", "J1", 23, 44, 32
-                ).registerTower(weatherTower);
-        AircraftFactory.newAircraft("Helicopter", "H1", 654, 33, 20
-                ).registerTower(weatherTower);
+                
+        while ((line = reader.readLine()) != null)
+        {
+            splitted = line.split(" ");
+            type = splitted[0];
+            name = splitted[1];
+            longitude = Integer.parseInt(splitted[2]);
+            latitude = Integer.parseInt(splitted[3]);
+            height = Integer.parseInt(splitted[4]);
+            aircraft = AircraftFactory.newAircraft(
+                type, name, longitude, latitude, height);
+            aircraft.registerTower(weatherTower);
+        }
+        reader.close();
         while (simulations-- > 0)
             weatherTower.changeWeather();
+        writer.close();
         return;
     }
 }
-
-//fix error after landing
-//read file, write to file
-//erorrs check
-//unregisters from the weather tower and logs its current coordinates? logs?

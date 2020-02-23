@@ -19,7 +19,6 @@ public class Baloon extends Aircraft implements Flyable {
         String baloon = "Baloon#"+name+"("+id+")";
 
         Log.message(baloon + ": ", weather);
-
         if (weather == "SUN")
             coordinates = new Coordinates(longitude + 2, latitude, height + 4);
         else if (weather == "RAIN")
@@ -28,13 +27,8 @@ public class Baloon extends Aircraft implements Flyable {
             coordinates = new Coordinates(longitude, latitude, height - 3);
         else if (weather == "SNOW")
             coordinates = new Coordinates(longitude, latitude, height - 15);
-
         if (coordinates.getHeight() == 0)
-            unregisterTower(baloon);
-
-        System.out.println("Longitude " + coordinates.getLongitude() +
-                        " Latitude " + coordinates.getLatitude() +
-                        " Height " + coordinates.getHeight()); //tmp
+            unregisterTower(baloon, coordinates);
     }
 
     public void registerTower(WeatherTower weatherTower) {
@@ -43,8 +37,8 @@ public class Baloon extends Aircraft implements Flyable {
         Log.message("Baloon#"+name+"("+id+")", "registered");
     }
     
-    public void unregisterTower(String baloon) {
+    public void unregisterTower(String baloon, Coordinates coordinates) {
         this.weatherTower.unregister(this);
-        Log.message(baloon, "unregistered");
+        Log.landing(baloon, coordinates);
     }
 }

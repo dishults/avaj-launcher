@@ -5,12 +5,13 @@ package src;
  */
 public class Log {
 
-    private static String sun = "Here comes the SUN, doo-dun doo-doo";
-    public static String rain = "But I set fire to the RAIN";
-    public static String fog = "Through the FOG like I’m S-N-double-O-P";
-    public static String snow = "Let it SNOW, let it snow, let it snow";
-    public static String registered = " registered to weather tower.";
-    public static String unregistered = " unregistered from weather tower.";
+    static final String sun = "Here comes the SUN, doo-dun doo-doo";
+    static final String rain = "But I set fire to the RAIN";
+    static final String fog = "Through the FOG like I’m S-N-double-O-P";
+    static final String snow = "Let it SNOW, let it snow, let it snow";
+    
+    static final String registered = " registered to weather tower.";
+    static final String unregistered = " unregistered from weather tower.";
 
     public static void message(String aircraft, String msg) {
         String log = new String();
@@ -25,10 +26,18 @@ public class Log {
             log = aircraft + snow;
         else if (msg == "registered")
             log = "Tower says: " + aircraft + registered;
-        else if (msg == "unregistered")
-            log = aircraft + " landing.\n"
-                    +"Tower says: " + aircraft + unregistered;
+        else
+            log = aircraft + msg + "\nTower says: " + aircraft + unregistered;
 
-        System.out.println(log);
+        System.out.println(log); //tmp
+        //Simulator.writer.write(log + '\n');
+    }
+
+    public static void landing(String aircraft, Coordinates coordinates) {
+        String msg = " is now landing at coordinates " 
+                        + coordinates.getLongitude() + ' ' 
+                        + coordinates.getLatitude() + ' ' 
+                        + coordinates.getHeight();
+        message(aircraft, msg);
     }
 }

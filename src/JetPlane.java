@@ -19,7 +19,6 @@ public class JetPlane extends Aircraft implements Flyable {
         String jetPlane = "JetPlane#"+name+"("+id+")";
 
         Log.message(jetPlane + ": ", weather);
-
         if (weather == "SUN")
             coordinates = new Coordinates(longitude + 10, latitude, height + 2);
         else if (weather == "RAIN")
@@ -28,13 +27,8 @@ public class JetPlane extends Aircraft implements Flyable {
             coordinates = new Coordinates(longitude + 1, latitude, height);
         else if (weather == "SNOW")
             coordinates = new Coordinates(longitude, latitude, height - 7);
-
         if (coordinates.getHeight() == 0)
-            unregisterTower(jetPlane);
-
-        System.out.println("Longitude " + coordinates.getLongitude() +
-                        " Latitude " + coordinates.getLatitude() +
-                        " Height " + coordinates.getHeight()); //tmp
+            unregisterTower(jetPlane, coordinates);
     }
 
     public void registerTower(WeatherTower weatherTower) {
@@ -43,8 +37,8 @@ public class JetPlane extends Aircraft implements Flyable {
         Log.message("JetPlane#"+name+"("+id+")", "registered");
     }
 
-    public void unregisterTower(String jetPlane) {
+    public void unregisterTower(String jetPlane, Coordinates coordinates) {
         this.weatherTower.unregister(this);
-        Log.message(jetPlane, "unregistered");
+        Log.landing(jetPlane, coordinates);
     }
 }

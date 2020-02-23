@@ -14,7 +14,6 @@ public class Aircraft {
         id = nextid();
         this.name = name;
         this.coordinates = coordinates;
-        //System.out.println("id "+id+"\nname "+this.name+"\ncoordanates "+this.coordanates);
     }
     private long nextid() {
         return ++idCounter;
