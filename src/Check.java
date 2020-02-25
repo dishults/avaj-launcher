@@ -1,13 +1,14 @@
 package src;
 
-import java.util.Arrays;
+import java.io.File;
 
 /**
  * Check
  */
 public class Check extends Simulator {
     
-    static final String[] aircraft = new String[] {"Baloon", "JetPlane", "Helicopter"};
+    static final String[] aircraft = new String[] {
+                                        "Baloon", "JetPlane", "Helicopter"};
     private static String splitted[];
 
     Check(String line) throws NumberFormatException, Exception {
@@ -15,50 +16,78 @@ public class Check extends Simulator {
         if (splitted.length != 5)
             throw new Exception("Bad number of arguments for line: \"" 
             + line + "\" (should be 5, got " + splitted.length + ')');
-        type = splitted[0];
+        if (checkType() == false)
+            throw new Exception("Incorrect aircraft type: \""+splitted[0]+'"');
         name = splitted[1];
-        longitude = Integer.parseInt(splitted[2]);
-        latitude = Integer.parseInt(splitted[3]);
-        height = Integer.parseInt(splitted[4]);
-        input();
+        if (checkLongitude() == false)
+            throw new NumberFormatException("Bad longitude number for " 
+                        + type + ' ' + name + ": \"" + splitted[2] + '"');
+        if (checkLatitude() == false)
+            throw new NumberFormatException("Bad latitude number: \"" 
+                                                        + splitted[3] + '"');
+        if (checkHeight() == false)
+            throw new NumberFormatException("Bad height number: \""
+                                                        + splitted[4] + '"');
     }
 
     static void args(String[] args) {
-        if (args.length != 1) {
+        if (args.length != 1)
+        {
             System.err.println("Usage: java src.Simulator scenario.txt");
             System.exit(0);
         }
     }
-    static void input() throws Exception, NumberFormatException {
-        if (checkType() == false)
-            throw new Exception("Incorrect aircraft type: \"" + type + '"');
-        if (checkName() == false)
-            throw new Exception("Incorrect name: \"" + name + '"');
-        if (checkLongitude() == false)
-            throw new NumberFormatException("Bad longitude number for " + type + ' ' + name + ": \"" + longitude + '"');
-        if (checkLatitude() == false)
-            throw new NumberFormatException("Bad latitude number: \"" + latitude + '"');
-        if (checkHeight() == false)
-            throw new NumberFormatException("Bad height number: \"" + height + '"');
+    static void file(File file) {
+        if (file.length() == 0)
+        {
+            System.err.println("Your file \"" +file+ "\" appears to be empty");
+            System.exit(0);
+        }
     }
 
     static private boolean checkType() {
-        return Arrays.asList(aircraft).contains(type);
-    }
-
-    private static boolean checkName() {
-        return true;
+        if (splitted[0].equalsIgnoreCase(aircraft[0]))
+        {
+            type = aircraft[0];
+            return true;
+        }
+        else if (splitted[0].equalsIgnoreCase(aircraft[1]))
+        {
+            type = aircraft[1];
+            return true;
+        }
+        else if (splitted[0].equalsIgnoreCase(aircraft[2]))
+        {
+            type = aircraft[2];
+            return true;
+        }
+        return false;
     }
 
     private static boolean checkLongitude() {
-            return longitude > 0;
+        try {
+            longitude = Integer.parseInt(splitted[2]);
+        } catch (NumberFormatException e) {
+            return false;
+        }
+        return longitude > 0;
     }
     
     private static boolean checkLatitude() {
-            return latitude > 0;
+        try {
+            latitude = Integer.parseInt(splitted[3]);
+        } catch (NumberFormatException e) {
+            return false;
+        }
+        return latitude > 0;
     }
     
     private static boolean checkHeight() {
-            return height >= 0;
+        try {
+            height = Integer.parseInt(splitted[4]);
+        } catch (NumberFormatException e) {
+            return false;
+        }
+        return height >= 0;
     }
 }

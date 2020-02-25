@@ -17,21 +17,17 @@ public class Simulator {
     static int latitude;
     static int height;
     static Flyable aircraft;
-
     public static void main(String[] args) {
-        //Check.args(args);
-        // File readFile = new File(args[0]);
-        try {
-            writer = new PrintWriter("simulation.txt");
-        } catch (FileNotFoundException e) {
-            System.err.println("Couldn't write to \"simulation.txt\" file");
-            e.printStackTrace();
-        }
-        File readFile = new File("scenario.txt"); //tmp for debuging
-        try (BufferedReader reader = new BufferedReader(new FileReader(readFile));) {
+        Check.args(args);
+        File file = new File(args[0]);
+        Check.file(file);
+        try (BufferedReader reader = new BufferedReader(new FileReader(file));)
+        {
             int simulations = Integer.parseInt(reader.readLine());
             if (simulations <= 0)
-                throw new NumberFormatException("Bad simulations number: \"" + simulations + '"');
+                throw new NumberFormatException("Bad simulations number: \""
+                                                    + simulations + '"');
+            writer = new PrintWriter("simulation.txt");
             WeatherTower weatherTower = new WeatherTower();
             while ((line = reader.readLine()) != null)
             {
@@ -42,16 +38,27 @@ public class Simulator {
             }
             while (simulations-- > 0)
                 weatherTower.changeWeather();
-        } catch (FileNotFoundException e) {
+        } 
+        catch (FileNotFoundException e)
+        {
             System.err.println(e);
-        } catch (NumberFormatException e) {
+        }
+        catch (NumberFormatException e)
+        {
             System.err.println(e + " (should be one positive integer)");
-        } catch (IOException e) {
+        }
+        catch (IOException e)
+        {
             System.err.println("Something went wrong\n" + e);
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             System.err.println(e);
-        } finally {
-            writer.close();
+        }
+        finally
+        {
+            if (writer != null)
+                writer.close();
         }
     }
 }
