@@ -1,13 +1,15 @@
-package src;
+package simulator.aircraft;
 
+import simulator.Log;
+import simulator.WeatherTower;
 /**
- * JetPlane
+ * Helicopter
  */
-public class JetPlane extends Aircraft implements Flyable {
+public class Helicopter extends Aircraft implements Flyable {
 
     private WeatherTower weatherTower;
 
-    JetPlane(String name, Coordinates coordinates) {
+    Helicopter(String name, Coordinates coordinates) {
         super(name, coordinates);
     }
 
@@ -16,29 +18,29 @@ public class JetPlane extends Aircraft implements Flyable {
         int longitude = coordinates.getLongitude();
         int latitude = coordinates.getLatitude();
         int height = coordinates.getHeight();
-        String jetPlane = "JetPlane#"+name+"("+id+")";
+        String helicopter = "Helicopter#"+name+"("+id+")";
 
-        Log.message(jetPlane + ": ", weather);
+        Log.message(helicopter + ": ", weather);
         if (weather == "SUN")
             coordinates = new Coordinates(longitude + 10, latitude, height + 2);
         else if (weather == "RAIN")
             coordinates = new Coordinates(longitude + 5, latitude, height);
-        else if (weather == "FOG")
+        else if (weather == "FOG")        
             coordinates = new Coordinates(longitude + 1, latitude, height);
         else if (weather == "SNOW")
-            coordinates = new Coordinates(longitude, latitude, height - 7);
+            coordinates = new Coordinates(longitude, latitude, height - 12);
         if (coordinates.getHeight() == 0)
-            unregisterTower(jetPlane, coordinates);
+            unregisterTower(helicopter, coordinates);
     }
 
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
         this.weatherTower.register(this);
-        Log.message("JetPlane#"+name+"("+id+")", "registered");
+        Log.message("Helicopter#"+name+"("+id+")", "registered");
     }
 
-    public void unregisterTower(String jetPlane, Coordinates coordinates) {
+    public void unregisterTower(String helicopter, Coordinates coordinates) {
         this.weatherTower.unregister(this);
-        Log.landing(jetPlane, coordinates);
+        Log.landing(helicopter, coordinates);
     }
 }

@@ -1,0 +1,164 @@
+Tower says: Baloon#B1(1) registered to weather tower.
+Tower says: Baloon#B2(2) registered to weather tower.
+Tower says: JetPlane#J1(3) registered to weather tower.
+Tower says: Helicopter#H1(4) registered to weather tower.
+Tower says: Helicopter#H2(5) registered to weather tower.
+Tower says: Helicopter#H3(6) registered to weather tower.
+Tower says: Baloon#B3(7) registered to weather tower.
+Tower says: JetPlane#J2(8) registered to weather tower.
+Tower says: Helicopter#H4(9) registered to weather tower.
+Baloon#B1(1): Through the FOG like I’m S-N-double-O-P
+Baloon#B2(2): But I set fire to the RAIN
+JetPlane#J1(3): Let it SNOW, let it snow, let it snow
+Helicopter#H1(4): Here comes the SUN, doo-dun doo-doo
+Helicopter#H2(5): Through the FOG like I’m S-N-double-O-P
+Helicopter#H3(6): Here comes the SUN, doo-dun doo-doo
+Baloon#B3(7): Here comes the SUN, doo-dun doo-doo
+JetPlane#J2(8): Through the FOG like I’m S-N-double-O-P
+Helicopter#H4(9): Here comes the SUN, doo-dun doo-doo
+Baloon#B1(1): Through the FOG like I’m S-N-double-O-P
+Baloon#B2(2): But I set fire to the RAIN
+JetPlane#J1(3): Let it SNOW, let it snow, let it snow
+Helicopter#H1(4): Through the FOG like I’m S-N-double-O-P
+Helicopter#H2(5): Let it SNOW, let it snow, let it snow
+Helicopter#H3(6): Here comes the SUN, doo-dun doo-doo
+Baloon#B3(7): Through the FOG like I’m S-N-double-O-P
+JetPlane#J2(8): Let it SNOW, let it snow, let it snow
+Helicopter#H4(9): Through the FOG like I’m S-N-double-O-P
+Baloon#B1(1): Let it SNOW, let it snow, let it snow
+Baloon#B1(1) is now landing at coordinates 2 3 0
+Tower says: Baloon#B1(1) unregistered from weather tower.
+JetPlane#J1(3): Here comes the SUN, doo-dun doo-doo
+Helicopter#H1(4): Here comes the SUN, doo-dun doo-doo
+Helicopter#H2(5): Through the FOG like I’m S-N-double-O-P
+Helicopter#H3(6): Here comes the SUN, doo-dun doo-doo
+Baloon#B3(7): Here comes the SUN, doo-dun doo-doo
+JetPlane#J2(8): Here comes the SUN, doo-dun doo-doo
+Helicopter#H4(9): Here comes the SUN, doo-dun doo-doo
+Baloon#B2(2): Through the FOG like I’m S-N-double-O-P
+JetPlane#J1(3): Here comes the SUN, doo-dun doo-doo
+Helicopter#H1(4): But I set fire to the RAIN
+Helicopter#H2(5): Here comes the SUN, doo-dun doo-doo
+Helicopter#H3(6): Here comes the SUN, doo-dun doo-doo
+Baloon#B3(7): But I set fire to the RAIN
+JetPlane#J2(8): But I set fire to the RAIN
+Helicopter#H4(9): But I set fire to the RAIN
+Baloon#B2(2): Here comes the SUN, doo-dun doo-doo
+JetPlane#J1(3): But I set fire to the RAIN
+Helicopter#H1(4): Let it SNOW, let it snow, let it snow
+Helicopter#H2(5): But I set fire to the RAIN
+Helicopter#H3(6): Here comes the SUN, doo-dun doo-doo
+Baloon#B3(7): Let it SNOW, let it snow, let it snow
+JetPlane#J2(8): Through the FOG like I’m S-N-double-O-P
+Helicopter#H4(9): Through the FOG like I’m S-N-double-O-P
+Baloon#B2(2): But I set fire to the RAIN
+JetPlane#J1(3): Through the FOG like I’m S-N-double-O-P
+Helicopter#H1(4): Through the FOG like I’m S-N-double-O-P
+Helicopter#H2(5): Through the FOG like I’m S-N-double-O-P
+Helicopter#H3(6): Here comes the SUN, doo-dun doo-doo
+Baloon#B3(7): But I set fire to the RAIN
+JetPlane#J2(8): Here comes the SUN, doo-dun doo-doo
+Helicopter#H4(9): But I set fire to the RAIN
+Baloon#B2(2): Let it SNOW, let it snow, let it snow
+JetPlane#J1(3): Here comes the SUN, doo-dun doo-doo
+Helicopter#H1(4): Here comes the SUN, doo-dun doo-doo
+Helicopter#H2(5): But I set fire to the RAIN
+Helicopter#H3(6): Here comes the SUN, doo-dun doo-doo
+Baloon#B3(7): Let it SNOW, let it snow, let it snow
+Baloon#B3(7) is now landing at coordinates 106 22 0
+Tower says: Baloon#B3(7) unregistered from weather tower.
+Helicopter#H4(9): But I set fire to the RAIN
+Baloon#B2(2): Let it SNOW, let it snow, let it snow
+JetPlane#J1(3): Let it SNOW, let it snow, let it snow
+Helicopter#H1(4): Let it SNOW, let it snow, let it snow
+Helicopter#H2(5): But I set fire to the RAIN
+Helicopter#H3(6): Through the FOG like I’m S-N-double-O-P
+JetPlane#J2(8): Here comes the SUN, doo-dun doo-doo
+Helicopter#H4(9): Here comes the SUN, doo-dun doo-doo
+Baloon#B2(2): Through the FOG like I’m S-N-double-O-P
+JetPlane#J1(3): Through the FOG like I’m S-N-double-O-P
+Helicopter#H1(4): But I set fire to the RAIN
+Helicopter#H2(5): Here comes the SUN, doo-dun doo-doo
+Helicopter#H3(6): Through the FOG like I’m S-N-double-O-P
+JetPlane#J2(8): Let it SNOW, let it snow, let it snow
+Helicopter#H4(9): Through the FOG like I’m S-N-double-O-P
+Baloon#B2(2): Let it SNOW, let it snow, let it snow
+JetPlane#J1(3): Let it SNOW, let it snow, let it snow
+Helicopter#H1(4): But I set fire to the RAIN
+Helicopter#H2(5): Let it SNOW, let it snow, let it snow
+Helicopter#H3(6): Let it SNOW, let it snow, let it snow
+JetPlane#J2(8): Let it SNOW, let it snow, let it snow
+Helicopter#H4(9): Through the FOG like I’m S-N-double-O-P
+Baloon#B2(2): Through the FOG like I’m S-N-double-O-P
+JetPlane#J1(3): Let it SNOW, let it snow, let it snow
+Helicopter#H1(4): Here comes the SUN, doo-dun doo-doo
+Helicopter#H2(5): But I set fire to the RAIN
+Helicopter#H3(6): Here comes the SUN, doo-dun doo-doo
+JetPlane#J2(8): Through the FOG like I’m S-N-double-O-P
+Helicopter#H4(9): Through the FOG like I’m S-N-double-O-P
+Baloon#B2(2): Through the FOG like I’m S-N-double-O-P
+Baloon#B2(2) is now landing at coordinates 3 8 0
+Tower says: Baloon#B2(2) unregistered from weather tower.
+Helicopter#H1(4): Here comes the SUN, doo-dun doo-doo
+Helicopter#H2(5): Let it SNOW, let it snow, let it snow
+Helicopter#H3(6): But I set fire to the RAIN
+JetPlane#J2(8): But I set fire to the RAIN
+Helicopter#H4(9): But I set fire to the RAIN
+JetPlane#J1(3): Here comes the SUN, doo-dun doo-doo
+Helicopter#H1(4): Here comes the SUN, doo-dun doo-doo
+Helicopter#H2(5): Let it SNOW, let it snow, let it snow
+Helicopter#H2(5) is now landing at coordinates 65 33 0
+Tower says: Helicopter#H2(5) unregistered from weather tower.
+JetPlane#J2(8): But I set fire to the RAIN
+Helicopter#H4(9): Here comes the SUN, doo-dun doo-doo
+JetPlane#J1(3): Through the FOG like I’m S-N-double-O-P
+Helicopter#H1(4): Through the FOG like I’m S-N-double-O-P
+Helicopter#H3(6): Let it SNOW, let it snow, let it snow
+JetPlane#J2(8): Here comes the SUN, doo-dun doo-doo
+Helicopter#H4(9): Through the FOG like I’m S-N-double-O-P
+JetPlane#J1(3): Let it SNOW, let it snow, let it snow
+JetPlane#J1(3) is now landing at coordinates 71 44 0
+Tower says: JetPlane#J1(3) unregistered from weather tower.
+Helicopter#H3(6): Let it SNOW, let it snow, let it snow
+JetPlane#J2(8): But I set fire to the RAIN
+Helicopter#H4(9): Here comes the SUN, doo-dun doo-doo
+Helicopter#H1(4): Here comes the SUN, doo-dun doo-doo
+Helicopter#H3(6): Through the FOG like I’m S-N-double-O-P
+JetPlane#J2(8): Let it SNOW, let it snow, let it snow
+Helicopter#H4(9): But I set fire to the RAIN
+Helicopter#H1(4): Here comes the SUN, doo-dun doo-doo
+Helicopter#H3(6): Here comes the SUN, doo-dun doo-doo
+JetPlane#J2(8): But I set fire to the RAIN
+Helicopter#H4(9): Let it SNOW, let it snow, let it snow
+Helicopter#H1(4): But I set fire to the RAIN
+Helicopter#H3(6): But I set fire to the RAIN
+JetPlane#J2(8): Through the FOG like I’m S-N-double-O-P
+Helicopter#H4(9): Through the FOG like I’m S-N-double-O-P
+Helicopter#H1(4): Through the FOG like I’m S-N-double-O-P
+Helicopter#H3(6): Let it SNOW, let it snow, let it snow
+JetPlane#J2(8): But I set fire to the RAIN
+Helicopter#H4(9): Here comes the SUN, doo-dun doo-doo
+Helicopter#H1(4): Here comes the SUN, doo-dun doo-doo
+Helicopter#H3(6): Through the FOG like I’m S-N-double-O-P
+JetPlane#J2(8): Through the FOG like I’m S-N-double-O-P
+Helicopter#H4(9): But I set fire to the RAIN
+Helicopter#H1(4): But I set fire to the RAIN
+Helicopter#H3(6): Here comes the SUN, doo-dun doo-doo
+JetPlane#J2(8): Here comes the SUN, doo-dun doo-doo
+Helicopter#H4(9): Let it SNOW, let it snow, let it snow
+Helicopter#H1(4): Let it SNOW, let it snow, let it snow
+Helicopter#H3(6): But I set fire to the RAIN
+JetPlane#J2(8): But I set fire to the RAIN
+Helicopter#H4(9): Through the FOG like I’m S-N-double-O-P
+Helicopter#H1(4): Through the FOG like I’m S-N-double-O-P
+Helicopter#H3(6): Through the FOG like I’m S-N-double-O-P
+JetPlane#J2(8): Let it SNOW, let it snow, let it snow
+Helicopter#H4(9): Here comes the SUN, doo-dun doo-doo
+Helicopter#H1(4): Here comes the SUN, doo-dun doo-doo
+Helicopter#H3(6): Here comes the SUN, doo-dun doo-doo
+JetPlane#J2(8): Here comes the SUN, doo-dun doo-doo
+Helicopter#H4(9): But I set fire to the RAIN
+Helicopter#H1(4): But I set fire to the RAIN
+Helicopter#H3(6): Here comes the SUN, doo-dun doo-doo
+JetPlane#J2(8): But I set fire to the RAIN
+Helicopter#H4(9): Through the FOG like I’m S-N-double-O-P

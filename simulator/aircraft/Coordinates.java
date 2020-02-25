@@ -1,4 +1,4 @@
-package src;
+package simulator.aircraft;
 
 /**
  * Coordinates

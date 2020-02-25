@@ -1,4 +1,4 @@
-package src;
+package simulator;
 
 import java.io.File;
 
@@ -33,7 +33,7 @@ public class Check extends Simulator {
     static void args(String[] args) {
         if (args.length != 1)
         {
-            System.err.println("Usage: java src.Simulator scenario.txt");
+            System.err.println("Usage: java simulator.Simulator scenario.txt");
             System.exit(0);
         }
     }

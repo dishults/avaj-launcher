@@ -1,4 +1,6 @@
-package src;
+package simulator;
+
+import simulator.aircraft.Coordinates;
 
 /**
  * Log

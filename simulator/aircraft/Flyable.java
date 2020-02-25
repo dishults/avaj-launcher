@@ -1,4 +1,7 @@
-package src;
+package simulator.aircraft;
+
+import simulator.WeatherTower;
+
 /**
  * Flyable
  */
