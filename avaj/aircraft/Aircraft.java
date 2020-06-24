@@ -1,4 +1,4 @@
-package simulator.aircraft;
+package avaj.aircraft;
 
 /**
  * Aircraft

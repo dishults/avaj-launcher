@@ -1,6 +1,6 @@
-package simulator;
+package avaj.simulator;
 
-import simulator.aircraft.Coordinates;
+import avaj.aircraft.Coordinates;
 
 /**
  * WeatherProvider

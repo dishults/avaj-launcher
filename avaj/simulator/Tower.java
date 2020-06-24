@@ -1,9 +1,9 @@
-package simulator;
+package avaj.simulator;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import simulator.aircraft.Flyable;
+import avaj.aircraft.Flyable;
 
 /**
  * Tower
@@ -26,7 +26,7 @@ public class Tower {
         for (int i = 0; i < observers.size(); i++) {
             observers.get(i).updateConditions();
         }
-        if (observers.isEmpty()) {//when every aircraft has landed
+        if (observers.isEmpty()) {  //  when every aircraft has landed
             Simulator.writer.close();
             System.exit(0);
         }    

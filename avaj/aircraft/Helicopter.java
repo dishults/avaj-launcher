@@ -1,7 +1,7 @@
-package simulator.aircraft;
+package avaj.aircraft;
 
-import simulator.Log;
-import simulator.WeatherTower;
+import avaj.simulator.Log;
+import avaj.simulator.WeatherTower;
 /**
  * Helicopter
  */

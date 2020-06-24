@@ -1,6 +1,6 @@
-package simulator.aircraft;
+package avaj.aircraft;
 
-import simulator.WeatherTower;
+import avaj.simulator.WeatherTower;
 
 /**
  * Flyable

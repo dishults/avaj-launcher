@@ -1,6 +1,6 @@
-package simulator;
+package avaj.simulator;
 
-import simulator.aircraft.Coordinates;
+import avaj.aircraft.Coordinates;
 
 /**
  * Log
@@ -31,8 +31,7 @@ public class Log {
         else
             log = aircraft + msg + "\nTower says: " + aircraft + unregistered;
 
-        System.out.println(log); //tmp
-        //Simulator.writer.write(log + '\n');
+        Simulator.writer.write(log + '\n');
     }
 
     public static void landing(String aircraft, Coordinates coordinates) {

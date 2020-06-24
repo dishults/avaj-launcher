@@ -1,4 +1,4 @@
-package simulator;
+package avaj.simulator;
 
 import java.io.File;
 
