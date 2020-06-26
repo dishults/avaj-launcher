@@ -7,17 +7,15 @@ import avaj.aircraft.Coordinates;
  */
 public class WeatherProvider {
 
-    private static WeatherProvider weatherProvider;
-    private static String[] weather;
+    private static WeatherProvider weatherProvider = new WeatherProvider();
+    private static String[] weather = {"RAIN", "FOG", "SUN", "SNOW"};
     private static int n = 0;
     
-    private WeatherProvider() {
-        weather = new String[]{"RAIN", "FOG", "SUN", "SNOW"};
-    }
+    /*  Private Constructor to achieve singleton object 
+    (it means only one object of the class can be created) */
+    private WeatherProvider() {}
 
     public static WeatherProvider getProvider() {
-        if (weatherProvider == null)
-            weatherProvider = new WeatherProvider();
         return weatherProvider;
     }
 

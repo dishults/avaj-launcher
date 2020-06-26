@@ -7,8 +7,7 @@ import java.io.File;
  */
 public class Check extends Simulator {
     
-    static final String[] aircraft = new String[] {
-                                        "Baloon", "JetPlane", "Helicopter"};
+    static final String[] aircraft = {"Baloon", "JetPlane", "Helicopter"};
     private static String splitted[];
 
     Check(String line) throws NumberFormatException, Exception {
@@ -34,14 +33,14 @@ public class Check extends Simulator {
         if (args.length != 1)
         {
             System.err.println("Usage: java simulator.Simulator scenario.txt");
-            System.exit(0);
+            System.exit(1);
         }
     }
     static void file(File file) {
         if (file.length() == 0)
         {
             System.err.println("Your file \"" +file+ "\" appears to be empty");
-            System.exit(0);
+            System.exit(1);
         }
     }
 

@@ -17,6 +17,7 @@ public class Simulator {
 
     public static PrintWriter writer;
     private static String line;
+    static boolean success = false;
 
     /* Aircraft */
     static String type;
@@ -25,6 +26,7 @@ public class Simulator {
     static int latitude;
     static int height;
     static Flyable aircraft;
+
     public static void main(String[] args) {
         Check.args(args);
         File file = new File(args[0]);
@@ -46,7 +48,8 @@ public class Simulator {
             }
             while (simulations-- > 0)
                 weatherTower.changeWeather();
-        } 
+            success = true;
+        }
         catch (FileNotFoundException e)
         {
             System.err.println(e);
@@ -67,6 +70,8 @@ public class Simulator {
         {
             if (writer != null)
                 writer.close();
+            if (!success)
+                System.exit(1);
         }
     }
 }
