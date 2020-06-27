@@ -23,10 +23,17 @@ public class Tower {
     }
 
     protected void conditionsChanged() {
-        for (int i = 0; i < observers.size(); i++) {
+        int size = observers.size();
+        int i = 0;
+        while (i < observers.size()) {
             observers.get(i).updateConditions();
+            if (size == observers.size())
+                i++;
+            else
+                size = observers.size();
         }
-        if (observers.isEmpty()) {  //  when every aircraft has landed
+        /*  if every aircraft has landed */
+        if (observers.isEmpty()) { 
             Simulator.writer.close();
             System.exit(0);
         }    
