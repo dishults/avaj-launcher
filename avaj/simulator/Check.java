@@ -7,7 +7,7 @@ import java.io.File;
  */
 public class Check extends Simulator {
     
-    static final String[] aircraft = {"Baloon", "JetPlane", "Helicopter"};
+    static final String aircraft[] = {"Baloon", "JetPlane", "Helicopter"};
     private static String splitted[];
 
     Check(String line) throws NumberFormatException, Exception {
@@ -29,7 +29,7 @@ public class Check extends Simulator {
                                                         + splitted[4] + '"');
     }
 
-    static void args(String[] args) {
+    static void args(String args[]) {
         if (args.length != 1)
         {
             System.err.println("Usage: java simulator.Simulator scenario.txt");

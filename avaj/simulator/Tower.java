@@ -1,7 +1,6 @@
 package avaj.simulator;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import avaj.aircraft.Flyable;
 
@@ -10,7 +9,7 @@ import avaj.aircraft.Flyable;
  */
 public class Tower {
 
-    private List <Flyable> observers = new ArrayList <Flyable> ();
+    private ArrayList <Flyable> observers = new ArrayList <Flyable> ();
     
     public void register(Flyable flyable) {
         if (!observers.contains(flyable)) {

@@ -7,13 +7,13 @@ import avaj.aircraft.Coordinates;
  */
 public class Log {
 
-    static final String sun = "Here comes the SUN, doo-dun doo-doo";
-    static final String rain = "But I set fire to the RAIN";
-    static final String fog = "Through the FOG like I’m S-N-double-O-P";
-    static final String snow = "Let it SNOW, let it snow, let it snow";
+    static final String sun = "Here comes the SUN, doo-dun doo-doo",
+                        rain = "But I set fire to the RAIN",
+                        fog = "Through the FOG like I’m S-N-double-O-P",
+                        snow = "Let it SNOW, let it snow, let it snow",
     
-    static final String registered = " registered to weather tower.";
-    static final String unregistered = " unregistered from weather tower.";
+                        registered = " registered to weather tower.",
+                        unregistered = " unregistered from weather tower.";
 
     public static void message(String aircraft, String msg) {
         String log = new String();

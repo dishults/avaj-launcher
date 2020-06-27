@@ -20,18 +20,19 @@ public class Simulator {
     static boolean success = false;
 
     /* Aircraft */
-    static String type;
-    static String name;
-    static int longitude;
-    static int latitude;
-    static int height;
+    static String type,
+                  name;
+    static int longitude,
+               latitude,
+               height;
     static Flyable aircraft;
 
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         Check.args(args);
         File file = new File(args[0]);
         Check.file(file);
-        try (BufferedReader reader = new BufferedReader(new FileReader(file));)
+        /* Java 7 try-with-resources to auto close reader */
+        try (BufferedReader reader = new BufferedReader(new FileReader(file)))
         {
             int simulations = Integer.parseInt(reader.readLine());
             if (simulations <= 0)

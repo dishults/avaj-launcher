@@ -5,9 +5,9 @@ package avaj.aircraft;
  */
 public class Coordinates {
 
-    private int longitude;
-    private int latitude;
-    private int height;
+    private int longitude,
+                latitude,
+                height;
     
     Coordinates(int longitude, int latitude, int height) {
         if (longitude < 0)
