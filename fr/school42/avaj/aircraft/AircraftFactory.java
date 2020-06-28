@@ -1,4 +1,4 @@
-package avaj.aircraft;
+package fr.school42.avaj.aircraft;
 
 /**
  * AircraftFactory

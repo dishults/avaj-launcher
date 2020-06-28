@@ -1,4 +1,4 @@
-package avaj.simulator;
+package fr.school42.avaj.simulator;
 
 import java.io.File;
 

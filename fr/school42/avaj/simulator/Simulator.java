@@ -1,4 +1,4 @@
-package avaj.simulator;
+package fr.school42.avaj.simulator;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -7,8 +7,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import avaj.aircraft.AircraftFactory;
-import avaj.aircraft.Flyable;
+import fr.school42.avaj.aircraft.AircraftFactory;
+import fr.school42.avaj.aircraft.Flyable;
 
 /**
  * Simulator

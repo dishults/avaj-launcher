@@ -1,6 +1,6 @@
-package avaj.simulator;
+package fr.school42.avaj.simulator;
 
-import avaj.aircraft.Coordinates;
+import fr.school42.avaj.aircraft.Coordinates;
 
 /**
  * WeatherTower
