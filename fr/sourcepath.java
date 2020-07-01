@@ -6,7 +6,7 @@ This file is necessary so that the following command would work:
 Because normally there should be a dot, like so:
     javac -sourcepath . @sources.txt
 Or:
-    javac -sourcepath avaj @sources.txt
+    javac -sourcepath fr @sources.txt
 
 Because "@file" just expands the file for java compiler 
 and lists all the entries. 
@@ -21,5 +21,7 @@ this file is absolutely necessary.
 After running:
     find * -name "*.java" > sources.txt
 This file must always be at the top in sources.txt.
+
+Tested on MacOS Mojave, Catalina and Xubuntu 18.04 LTS.
 
 */
